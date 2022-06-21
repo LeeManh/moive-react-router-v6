@@ -1,25 +1,15 @@
-import logo from './logo.svg';
-import './App.css';
+// https://api.themoviedb.org/3/movie/popular?api_key=<<api_key>>&language=en-US&page=1
 
-function App() {
+import Navbar from "./components/Navbar";
+import RoutesComponent from "./routes/routes";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <Navbar />
+      <RoutesComponent />
     </div>
   );
-}
+};
 
 export default App;
